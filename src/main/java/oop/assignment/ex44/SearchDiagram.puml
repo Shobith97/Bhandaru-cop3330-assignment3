@@ -1,0 +1,29 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Solution44
+{
+-parser: JSONParser
+-jsonObject and json: JSONObject
+-obj: Object
+-subjects: JSONArray
+-iterator: Iterator
+-flag: int
+-product_name: String
++j = JSON() object
+
+}
+class JSON
+{
+-input: String
+-flag: int
++get_product_name()
++get_iterator()
++print_and_set_flag()
++print_sorry()
+}
+
+Solution44 "get product, iterator and print stuff from JSON()" --- JSON
+
+
+@enduml

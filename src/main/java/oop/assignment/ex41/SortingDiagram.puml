@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Solution41
+{
+-names: ArrayList<String>
+-count: int
++main()
++obj = Read() object
++w = Write() object
+
+}
+class Read
+{
++getnames()
++getcount()
+}
+class Write
+{
++write_to_file()
+}
+
+Solution41 "get names and count from Read()" --- Read
+Solution41 "use Write() to create output file"--- Write
+@enduml

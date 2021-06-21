@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Solution46
+{
+-str: String
++main()
++r = Read() object
++o = Frequency_Of_String_Words() object
+
+}
+class Read
+{
+-line and oldtext: String
++get_old_text()
+}
+class Frequency_Of_String_Words
+{
++count_freq(): Use Hash Map
+}
+
+Solution46 "get old text from Read()" --- Read
+Solution46 "It is used to count the frequency of each word"--- Frequency_Of_String_Words
+
+@enduml

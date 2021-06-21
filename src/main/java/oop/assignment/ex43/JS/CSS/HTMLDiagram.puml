@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Solution43
+{
+-author and siteName: String
+-js and css: char
++main()
++r = Read() object
++cd = CreateDirectory() object
+}
+class Read
+{
+-author and site: String
+-js and css: char
++get_sitename()
++get_author()
++ask_for_js()
++ask_for_css()
+}
+class CreateDirectory
+{
+-currentPath: String
+-websiteCreated: boolean
++set_path()
++create_files()
+}
+
+Solution43 "get names and permissions from Read()" --- Read
+Solution43 "It is used to create files in project directory"--- CreateDirectory
+
+@enduml
